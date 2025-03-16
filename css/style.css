@@ -1,0 +1,87 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 600px;
+    width: 100%;
+}
+
+h2 {
+    color: #343a40; /* Ganti h1 menjadi h2 */
+    margin-bottom: 20px;
+}
+
+.profile-photo {
+    width: 200px; /* Menyesuaikan ukuran foto */
+    height: 200px; /* Menyesuaikan ukuran foto */
+    object-fit: cover;
+    object-position: top; /* Mengatur posisi objek ke bagian atas */
+    margin-bottom: 20px;
+    border: 5px solid #343a40; /* Menambahkan border */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Menambahkan shadow */
+    border-radius: 50%; /* Menjadikan foto lingkaran */
+    background-color: #fff;
+}
+
+.file-item {
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    background-color: #f8f9fa;
+    display: flex;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+
+.file-item:hover {
+    background-color: #e9ecef;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.file-item i {
+    margin-right: 10px;
+    font-size: 24px;
+    color: #6c757d;
+}
+
+.file-item a {
+    text-decoration: none;
+    color: #212529;
+    flex-grow: 1;
+}
+
+.file-item a:hover {
+    text-decoration: underline;
+}
+
+#photoGallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; /* Jarak antara foto */
+    margin-top: 20px; /* Jarak antara daftar file dan galeri foto */
+    align-items: flex-start; /* Menjadikan galeri foto mulai dari atas */
+}
+
+#photoGallery img {
+    width: 180px; /* Menetapkan lebar foto */
+    height: 180px; /* Menetapkan tinggi foto */
+    object-fit: contain; /* Menampilkan foto sepenuhnya tanpa memotong */
+    border-radius: 8px; /* Memberi sudut bulat pada foto */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Efek bayangan */
+}
+
