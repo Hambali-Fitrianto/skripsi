@@ -4,22 +4,62 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Thesis File Storage</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <div class="container">
-        <h2>Hi everyone, my name is Hambali Fitrianto, S.Kom (Informatics Engineering, Trunojoyo University)</h2>
-        <img src="img/my-photo.jpg" alt="My Photo" class="profile-photo">
-        <h3>This is a few Documentation of My Thesis Journey and Mbkm's Research</h3>
-        <div id="photoGallery"></div>
-        <h3>Below is the link to my thesis application</h3>
-        <a href="https://aplikasi-skripsi-2vhvkrxp7mfdjllx3kegaq.streamlit.app/">ANALISIS SENTIMEN JAMU MADURA MENGGUNAKAN ALGORITMA SUPPORT VECTOR MACHINE DAN QUERY EXPANSION RANKING</a>
-        <h3>This is my Thesis Repository</h3>
-        <p>Please download the files you need, hope you find them useful</p>
-        <div id="fileList"></div>
-        <!-- <div id="history"></div> -->
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Thesis Repository</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#fileList">Files</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#photoGallery">Gallery</a></li>
+                    <li class="nav-item">
+                        <button class="btn btn-outline-light ms-3" id="darkModeToggle"><i class="fas fa-moon"></i></button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section text-center text-white d-flex align-items-center">
+        <div class="container">
+            <h1 class="fw-bold">Hi, I'm Hambali Fitrianto, S.Kom</h1>
+            <p class="lead">Informatics Engineering, Trunojoyo University</p>
+            <img src="img/my-photo.jpg" alt="My Photo" class="profile-photo img-thumbnail mt-3">
+        </div>
+    </section>
+
+    <!-- Content -->
+    <div class="container mt-5">
+        <h3 class="text-center mt-5">Thesis Journey & MBKM Research</h3>
+        <div id="photoGallery" class="row mt-4"></div>
+
+        <h3 class="text-center mt-5">Thesis Application</h3>
+        <div class="text-center">
+            <a href="https://aplikasi-skripsi-2vhvkrxp7mfdjllx3kegaq.streamlit.app/" class="btn btn-primary btn-lg mt-3 shadow">
+                <i class="fas fa-external-link-alt"></i> View Application
+            </a>
+        </div>
+
+        <h3 class="text-center mt-5">Thesis Repository</h3>
+        <p class="text-center">Download the files you need below:</p>
+        <div id="fileList" class="row mt-4"></div>
     </div>
+
+    <footer class="text-center p-4 mt-5 bg-dark text-light">
+        <p>© 2025 Hambali Fitrianto | Informatics Engineering, Trunojoyo University</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>

@@ -1,87 +1,49 @@
 body {
     font-family: 'Arial', sans-serif;
     background-color: #f8f9fa;
-    margin: 0;
-    padding: 0;
+    transition: all 0.3s ease-in-out;
+}
+
+.hero-section {
+    background: linear-gradient(to right, #343a40, #495057);
+    height: 100vh;
     display: flex;
     justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-}
-
-.container {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    max-width: 600px;
-    width: 100%;
-}
-
-h2 {
-    color: #343a40; /* Ganti h1 menjadi h2 */
-    margin-bottom: 20px;
 }
 
 .profile-photo {
-    width: 200px; /* Menyesuaikan ukuran foto */
-    height: 200px; /* Menyesuaikan ukuran foto */
+    width: 180px;
+    height: 180px;
     object-fit: cover;
-    object-position: top; /* Mengatur posisi objek ke bagian atas */
-    margin-bottom: 20px;
-    border: 5px solid #343a40; /* Menambahkan border */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Menambahkan shadow */
-    border-radius: 50%; /* Menjadikan foto lingkaran */
-    background-color: #fff;
+    object-position: top;
+    border: 5px solid #fff;
+    border-radius: 50%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
 }
 
-.file-item {
-    margin: 10px 0;
-    padding: 10px;
-    border: 1px solid #ced4da;
-    border-radius: 5px;
-    background-color: #f8f9fa;
-    display: flex;
-    align-items: center;
-    transition: all 0.3s ease;
+.profile-photo:hover {
+    transform: scale(1.1);
 }
 
-.file-item:hover {
-    background-color: #e9ecef;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+.card {
+    transition: all 0.3s ease-in-out;
 }
 
-.file-item i {
-    margin-right: 10px;
-    font-size: 24px;
-    color: #6c757d;
+.card:hover {
+    transform: scale(1.05);
 }
 
-.file-item a {
-    text-decoration: none;
-    color: #212529;
-    flex-grow: 1;
+.dark-mode {
+    background-color: #212529;
+    color: white;
 }
 
-.file-item a:hover {
-    text-decoration: underline;
+.dark-mode .card {
+    background-color: #343a40;
+    color: white;
 }
 
-#photoGallery {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px; /* Jarak antara foto */
-    margin-top: 20px; /* Jarak antara daftar file dan galeri foto */
-    align-items: flex-start; /* Menjadikan galeri foto mulai dari atas */
+.dark-mode .hero-section {
+    background: linear-gradient(to right, #212529, #343a40);
 }
-
-#photoGallery img {
-    width: 180px; /* Menetapkan lebar foto */
-    height: 180px; /* Menetapkan tinggi foto */
-    object-fit: contain; /* Menampilkan foto sepenuhnya tanpa memotong */
-    border-radius: 8px; /* Memberi sudut bulat pada foto */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Efek bayangan */
-}
-
